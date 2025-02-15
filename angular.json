@@ -57,12 +57,15 @@
               }
             ],
             "styles": [
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
           },
           "configurations": {
             "production": {
+              "baseHref": "/aventura/",
               "budgets": [
                 {
                   "type": "initial",
@@ -75,7 +78,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "serviceWorker": "ngsw-config.json"
             },
             "development": {
               "optimization": false,
@@ -91,7 +95,7 @@
             "ssl": true,
             "sslKey": "./localhost.key",
             "sslCert": "./localhost.crt"
-          },          
+          },
           "configurations": {
             "production": {
               "buildTarget": "Aventura:build:production"
@@ -104,8 +108,14 @@
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "07bb68d1-acc6-48e8-a7a5-239d9166fb1f"
   }
 }
