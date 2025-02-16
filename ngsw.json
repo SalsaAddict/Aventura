@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1739718390153,
+  "timestamp": 1739718951064,
   "index": "/Aventura/index.html",
   "assetGroups": [
     {
@@ -13,10 +13,32 @@
       "urls": [
         "/Aventura/favicon.ico",
         "/Aventura/index.html",
-        "/Aventura/main-SJMR65Y5.js",
+        "/Aventura/main-QG34AKBS.js",
         "/Aventura/manifest.webmanifest",
         "/Aventura/polyfills-FFHMD2TL.js",
         "/Aventura/styles-EYFGKRRW.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "artwork",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Aventura/songs/babalu/cover.jpg",
+        "/Aventura/songs/besitoabesito/cover.jpg",
+        "/Aventura/songs/delmar/cover.jpg",
+        "/Aventura/songs/desnudate/cover.jpg",
+        "/Aventura/songs/esoesamor/cover.jpg",
+        "/Aventura/songs/estesecreto/cover.jpg",
+        "/Aventura/songs/meemborrachare/cover.jpg",
+        "/Aventura/songs/oldtownroad/cover.jpg",
+        "/Aventura/songs/palopalacampana/cover.jpg",
+        "/Aventura/songs/suegra/cover.jpg",
+        "/Aventura/songs/ultimabotella/cover.jpg"
       ],
       "patterns": []
     },
@@ -35,18 +57,7 @@
         "/Aventura/icons/icon-384x384.png",
         "/Aventura/icons/icon-512x512.png",
         "/Aventura/icons/icon-72x72.png",
-        "/Aventura/icons/icon-96x96.png",
-        "/Aventura/songs/babalu/cover.jpg",
-        "/Aventura/songs/besitoabesito/cover.jpg",
-        "/Aventura/songs/delmar/cover.jpg",
-        "/Aventura/songs/desnudate/cover.jpg",
-        "/Aventura/songs/esoesamor/cover.jpg",
-        "/Aventura/songs/estesecreto/cover.jpg",
-        "/Aventura/songs/meemborrachare/cover.jpg",
-        "/Aventura/songs/oldtownroad/cover.jpg",
-        "/Aventura/songs/palopalacampana/cover.jpg",
-        "/Aventura/songs/suegra/cover.jpg",
-        "/Aventura/songs/ultimabotella/cover.jpg"
+        "/Aventura/icons/icon-96x96.png"
       ],
       "patterns": []
     }
@@ -62,8 +73,8 @@
     "/Aventura/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "/Aventura/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/Aventura/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/Aventura/index.html": "e557eb7f50814bea7b370d164223081ccb53af63",
-    "/Aventura/main-SJMR65Y5.js": "0de58e7abe4f20a415996872481aa7bc633229f2",
+    "/Aventura/index.html": "7ab93729e0c3e0cacafb93dcf5cd11af27fb6647",
+    "/Aventura/main-QG34AKBS.js": "ca541d9d37ec95d2c317f73389fdb9513460b018",
     "/Aventura/manifest.webmanifest": "342ca19120c97d8624d78d0edf6410396fdebcbd",
     "/Aventura/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
     "/Aventura/songs/babalu/cover.jpg": "d61718ecf3624a3e58dec596b289d55cafe03dec",
