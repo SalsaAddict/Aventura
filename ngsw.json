@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1739742828727,
+  "timestamp": 1739742957624,
   "index": "/Aventura/index.html",
   "assetGroups": [
     {
@@ -21,6 +21,28 @@
       "patterns": []
     },
     {
+      "name": "artwork",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Aventura/songs/babalu/cover.jpg",
+        "/Aventura/songs/besitoabesito/cover.jpg",
+        "/Aventura/songs/delmar/cover.jpg",
+        "/Aventura/songs/desnudate/cover.jpg",
+        "/Aventura/songs/esoesamor/cover.jpg",
+        "/Aventura/songs/estesecreto/cover.jpg",
+        "/Aventura/songs/meemborrachare/cover.jpg",
+        "/Aventura/songs/oldtownroad/cover.jpg",
+        "/Aventura/songs/palopalacampana/cover.jpg",
+        "/Aventura/songs/suegra/cover.jpg",
+        "/Aventura/songs/ultimabotella/cover.jpg"
+      ],
+      "patterns": []
+    },
+    {
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
@@ -35,18 +57,7 @@
         "/Aventura/icons/icon-384x384.png",
         "/Aventura/icons/icon-512x512.png",
         "/Aventura/icons/icon-72x72.png",
-        "/Aventura/icons/icon-96x96.png",
-        "/Aventura/songs/babalu/cover.jpg",
-        "/Aventura/songs/besitoabesito/cover.jpg",
-        "/Aventura/songs/delmar/cover.jpg",
-        "/Aventura/songs/desnudate/cover.jpg",
-        "/Aventura/songs/esoesamor/cover.jpg",
-        "/Aventura/songs/estesecreto/cover.jpg",
-        "/Aventura/songs/meemborrachare/cover.jpg",
-        "/Aventura/songs/oldtownroad/cover.jpg",
-        "/Aventura/songs/palopalacampana/cover.jpg",
-        "/Aventura/songs/suegra/cover.jpg",
-        "/Aventura/songs/ultimabotella/cover.jpg"
+        "/Aventura/icons/icon-96x96.png"
       ],
       "patterns": []
     }
