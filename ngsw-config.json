@@ -12,18 +12,30 @@
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
-          "/*.js"
+          "/*.js",
+          "/songs.json"
         ]
       }
     },
     {
-      "name": "assets",
-      "installMode": "lazy",
-      "updateMode": "prefetch",
+      "name": "cover",
+      "installMode": "prefetch",
       "resources": {
-        "files": [
-          "/**/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
-        ]
+        "files": ["/songs/*/cover.jpg"]
+      }
+    },
+    {
+      "name": "breakdown",
+      "installMode": "lazy",
+      "resources": {
+        "files": ["/songs/*/breakdown.json"]
+      }
+    },
+    {
+      "name": "tracks",
+      "installMode": "lazy",
+      "resources": {
+        "files": ["/songs/*/track*.trk"]
       }
     }
   ]

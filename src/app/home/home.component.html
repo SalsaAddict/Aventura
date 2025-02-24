@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="row row-cols-xxl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 g-3">
+    <div *ngFor="let song of catalog.songs" class="col">
+      <div class="card border-secondary">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-4">
+              <img [src]="song.cover" class="img-thumbnail" />
+            </div>
+            <div class="col-8 d-flex flex-column justify-content-center">
+              <div class="text-nowrap text-truncate">
+                <b [innerHTML]="song.title"></b>
+                <br />
+                <span [innerHTML]="song.artist"></span>
+                <br />
+                <span [innerHTML]="song.genre" class="text-muted"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card-footer text-center small"
+          [ngSwitch]="song.downloading"
+          (click)="toggle(song)"
+        >
+          <div *ngSwitchCase="false" [ngSwitch]="song.offline">
+            <div *ngSwitchCase="false">Download</div>
+            <div *ngSwitchCase="true">Remove Download</div>
+          </div>
+          <div *ngSwitchCase="true">
+            <i
+              class="bi bi-cloud-download-fill animate__animated animate__fadeIn animate__infinite"
+            ></i>
+            Downloading
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

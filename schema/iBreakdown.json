@@ -1,0 +1,168 @@
+{
+    "$ref": "#/definitions/IBreakdown",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "IBreakdown": {
+            "additionalProperties": false,
+            "properties": {
+                "beatsPerMeasure": {
+                    "title": "beatsPerMeasure",
+                    "type": "number"
+                },
+                "lag": {
+                    "title": "lag",
+                    "type": "number"
+                },
+                "sections": {
+                    "items": {
+                        "$ref": "#/definitions/ISection"
+                    },
+                    "title": "sections",
+                    "type": "array"
+                },
+                "tracks": {
+                    "$ref": "#/definitions/ITracks",
+                    "title": "tracks"
+                },
+                "trim": {
+                    "title": "trim",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "beatsPerMeasure",
+                "sections",
+                "tracks"
+            ],
+            "title": "IBreakdown",
+            "type": "object"
+        },
+        "IMeasure": {
+            "additionalProperties": false,
+            "properties": {
+                "beats": {
+                    "title": "beats",
+                    "type": "number"
+                },
+                "offset": {
+                    "title": "offset",
+                    "type": "number"
+                },
+                "structure": {
+                    "title": "structure",
+                    "type": "string"
+                }
+            },
+            "title": "IMeasure",
+            "type": "object"
+        },
+        "IPhrase": {
+            "anyOf": [
+                {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/definitions/IMeasure"
+                            },
+                            {
+                                "type": [
+                                    "string",
+                                    "number"
+                                ]
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                {
+                    "type": "number"
+                }
+            ],
+            "title": "IPhrase"
+        },
+        "ISection": {
+            "additionalProperties": false,
+            "properties": {
+                "phrases": {
+                    "items": {
+                        "$ref": "#/definitions/IPhrase"
+                    },
+                    "title": "phrases",
+                    "type": "array"
+                },
+                "structure": {
+                    "title": "structure",
+                    "type": "string"
+                },
+                "title": {
+                    "title": "title",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "phrases",
+                "title"
+            ],
+            "title": "ISection",
+            "type": "object"
+        },
+        "ITrack": {
+            "additionalProperties": false,
+            "properties": {
+                "groups": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "title": "groups"
+                },
+                "title": {
+                    "title": "title",
+                    "type": "string"
+                },
+                "trim": {
+                    "title": "trim",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "title"
+            ],
+            "title": "ITrack",
+            "type": "object"
+        },
+        "ITrackType": {
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/ITrack"
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "title": "ITrackType"
+        },
+        "ITracks": {
+            "anyOf": [
+                {
+                    "items": {
+                        "$ref": "#/definitions/ITrackType"
+                    },
+                    "type": "array"
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "title": "ITracks"
+        }
+    }
+}
+

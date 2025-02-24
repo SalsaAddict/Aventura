@@ -1,0 +1,12 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/public/songs.json"],
+      "url": "/schema/iSongs.json"
+    },
+    {
+      "fileMatch": ["/public/songs/*/breakdown.json"],
+      "url": "/schema/iBreakdown.json"
+    }
+  ]
+}

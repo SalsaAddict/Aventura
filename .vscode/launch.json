@@ -3,11 +3,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "ng serve",
-      "type": "chrome",
+      "command": "${workspaceFolder}/schema/schema.sh",
+      "name": "Json Schema",
       "request": "launch",
-      "preLaunchTask": "npm: start",
-      "url": "http://localhost:4200/"
+      "type": "node-terminal"
     }
   ]
 }
